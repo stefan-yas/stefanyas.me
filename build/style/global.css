@@ -1,0 +1,491 @@
+body {
+  width: 70%;
+  max-width: 900px;
+  margin: auto;
+  padding: 3%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #e8e8e8;
+  background-image: url("../img/niceback-wavy.svg");
+  background-color: black;
+  /* background-attachment: fixed; */
+  background-position: center;
+}
+
+h1 {
+  font-size: 55px;
+  text-align: center;
+  background-color: #3a3a3a;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: 1em;
+}
+
+h2 {
+  font-size: 45px;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 35px;
+  line-height: 1;
+}
+
+h4 {
+  font-size: 25;
+  line-height: 1;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 0.1;
+}
+
+.projects-title-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: row wrap;
+  width: 45px;
+  margin-right: 10px;
+}
+
+p {
+  font-size: 18px;
+}
+
+p > a {
+ text-decoration: underline;
+}
+
+p > img {
+  width: 250px;
+  border-radius: 20px;
+  vertical-align: middle;
+  margin-right: 100px;
+  padding-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #e8e8e8;
+}
+
+a:link {
+  text-decoration: none;
+  color: #e8e8e8;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #e8e8e8;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* padding-left: 50px; */
+}
+
+ul img {
+  width: 80px;
+}
+
+.container {
+  display: flex; /* or inline-flex */
+  flex-direction: row;
+  flex-wrap: row wrap;
+  list-style: none;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.item {
+    padding: 5px;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+.greybox {
+  background-color: #3a3a3a;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: 1em;
+  padding: 5%;
+}
+
+.greybox-content {}
+
+.greybox-content p {
+  margin-top: 38px;
+}
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  max-width: fit-content;
+  padding: 5%;
+  font-size: 20px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.flex-item {
+  font-size: 20px;
+  width: 300px;
+  margin: 20px;
+  background-color: #3a3a3a;
+  border: 2px solid black;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+}
+
+.flex-container h2 {
+  font-size: 22px;
+  padding: 20px;
+}
+
+.dates {
+  background-color: #2C2C2C;
+  color: #e8e8e8;
+  border: 2px solid black;
+  border-radius: 10px;
+  max-width: fit-content;
+  float: right;
+  margin: 10px 10px 0px 10px;
+  padding: 0 10px 0 10px;
+  font-style: italic;
+  font-size: 16px;
+}
+
+
+.projects-footer { /*main flex container*/
+  display: flex;
+  /*background-color: coral; CAN DELETE*/
+  padding-top: 30px;
+}
+
+.projects-container { /*second layer container, LEFT aligned*/
+  display: flex; /*this is flex container within a flex container*/
+  align-self: center; /*center flex item vertically*/
+  /*background-color: cornflowerblue; CAN DELETE*/
+  
+}
+
+.projects-item { /*items within the container above ^*/
+  /*background-color: green; CAN DELETE*/
+  font-size: 10px;
+  padding: 0 10px 0 10px;
+  text-align: center;
+}
+
+.projects-item img {
+  width: 20px;
+}
+
+.dates-blog-container { /*second layer container, RIGHT aligned*/
+  display: flex; /*this is flex container within a flex container*/
+  margin-left: auto; /*align this item to the right*/
+  align-self: center; /*center flex item vertically*/
+  /*background-color: crimson; CAN DELETE*/
+}
+
+.dates-blog { /*items within the container above ^*/
+  background-color: #2C2C2C;
+  color: #e8e8e8;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-style: italic;
+  font-size: 12px;
+  padding: 0 10px 0 10px;
+  margin-left: 10px;
+  
+}
+
+.dates-blog-2 { /**/
+  background-color: #2C2C2C;
+  color: #e8e8e8;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-style: italic;
+  font-size: 12px;
+  padding: 0 10px 0 10px;
+  margin-left: 10px;
+  margin-top: 65px;
+  float: right;
+}
+
+#btt {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #EC4E20;
+  color: #e8e8e8;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 18px;
+  border: black solid 2px;
+}
+
+.home {
+  display: -webkit-flex;
+  display: flex;
+  max-width: fit-content;
+  flex-wrap: wrap;
+  flex-flow: row;
+  flex-direction: row;
+  width: 200px;
+  border: none;
+  outline: none;
+  background-color: #EC4E20;
+  color: #e8e8e8;
+  cursor: pointer;
+  margin-right: 20px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.home a {
+  display: block;
+  padding: 12px;
+}
+
+.home1 {
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #EC4E20;
+  color: #e8e8e8;
+  cursor: pointer;
+  border-radius: 20px;
+  border: black solid 2px;
+}
+
+.home1 a {
+  display: block;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.sig {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  width: 250px;
+}
+
+/* .tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #ff9505;
+  color: black;
+  border: 2px solid black;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  font-family: 'Space Mono', monospace;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  right: 10%;
+  margin-left: -120px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+} */
+
+
+@media only screen and (max-width: 900px) {
+
+  body {
+    width: 80%;
+    background-image: url("../img/niceback-900px.svg");
+  }
+
+  h1 {
+    font-size: 7vw;
+  }
+
+  h2 {
+    font-size: 5vw;
+  }
+
+  p > img {
+    width: 150px;
+    border-radius: 20px;
+    vertical-align: middle;
+    margin-right: 100px;
+    padding-top: 10px;
+  }
+
+  .projects-footer { /*main flex container*/
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+
+  }
+
+  .projects-container {
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  .projects-item {
+    font-size: 12px;
+  }
+  
+  .projects-item img {
+    width: 24px;
+  }
+
+  .container {
+
+  }
+  
+  .item {
+
+    }
+
+  .item a {
+    font-size: 2.5vw;
+  }
+
+  .item img {
+    width: 8vw;
+  }
+  
+  .sig {
+    width: 35%;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: 95%;
+    background-image: url("../img/niceback-600px.svg");
+  }
+
+  h1 {
+    font-size: 10vw;
+    line-height: 1.3;
+    padding: 20px 0 20px 0;
+  }
+
+  h2 {
+    font-size: 8vw;
+  }
+
+  main h2 {
+    margin-top: 20px;
+  }
+
+  h3 {
+    font-size: 6vw;
+  }
+
+  p {
+    padding-top: 10px;
+  }
+
+  p > img {
+    width: 150px;
+    border-radius: 20px;
+    vertical-align: middle;
+    margin-right: 100px;
+    padding-top: 10px;
+  }
+
+  main h4 {
+    margin-top: 40px;
+  }
+
+  .projects-footer { /*main flex container*/
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+  }
+
+  .projects-container { /*second layer container, LEFT aligned*/
+    margin-bottom: 20px;
+    margin-right: 0; /*remove left align*/
+  }
+
+  .projects-item { /*items within the container above ^*/
+    font-size: 16px;
+  }
+  
+  .projects-item img {
+    width: 26px;
+  }
+
+  .dates-blog-container { /*second layer container, RIGHT aligned*/
+    margin-left: 0; /*remove right align*/
+
+  }
+
+  .dates-blog { /*items within the container above ^*/
+    font-size: 14px;
+    padding: 3px 13px 3px 13px;
+    margin: 0 10px 0 10px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+  
+  .item {
+      font-size: 18px;
+      flex-direction: row;
+      align-self: center;
+
+      margin-right: auto; /*aligns items to the left*/
+      padding-left: 10vw;
+    }
+
+  .item a {
+    align-self: center;
+    padding-left: 20px;
+    font-size: 4vw;
+  }
+
+  .item img {
+    width: 16vw;
+
+  }
+
+  .sig {
+    width: 35%;
+  }
+
+}

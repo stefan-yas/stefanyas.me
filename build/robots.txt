@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /hide_from_bots
+
+Sitemap: https://stefanyas.me/sitemap.xml
