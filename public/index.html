@@ -1,89 +1,111 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.4.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.4.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.4.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.4.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.4.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.4.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.4.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.4.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.4.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.4.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+  <title>Hi, I'm Stefan.</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="/style/global.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Hi, I'm Stefan." />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="stefanyas.me" />
+  <meta property="og:description"
+    content="Internet home of Stefan Yas, design geek, aspiring dog walker and vintage guitar enthusiast. Get in touch if you'd like to collaborate!" />
+  <meta name="description"
+    content="Internet home of Stefan Yas, design geek, aspiring dog walker and vintage guitar enthusiast. Get in touch if you'd like to collaborate!" />
+  <meta name="author" content="Stefan Yas" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="../img/masha.png" />
+  <link rel="canonical" href="https://stefanyas.me" />
+</head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<body>
+
+<header>
+
+  <h1>Hi, I'm Stefan.</h1>
+
+  <div class="flex-container">
+    <div class="flex-item">
+
+      <h2 style="text-align: center; margin-bottom: 0; text-decoration: underline;">
+        <a href="https://stefanyas.me/projects">See my projects</a></h2>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <div class="flex-item">
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+      <h2 style="text-align: center; margin-bottom: 0; text-decoration: underline;">
+        <a href="https://stefanyas.me/blog">Read my blog</a></h2>
+    </div>
+
+    <div class="flex-item">
+
+      <h2 style="text-align: center; margin-bottom: 0; text-decoration: underline;">
+        <a href="https://stefanyas.me/resume">Check out my resume</a></h2>
+    </div>
+
+  </div>
+
+</header>
+
+<main>
+
+</main>
+
+<footer>
+
+  <div class="greybox">
+    <div class="greybox-content">
+
+      <h2 style="text-align: center;">Get in touch</h2>
+
+      <ul class="container">
+
+        <li class="item">
+            <a href="https://t.me/stefanyas/">
+                <img src="../img/telegram_icon.svg" alt="telegram icon" >
+            </a>
+            <a href="https://t.me/stefanyas/">Telegram</a>
+        </li>
+
+        <li class="item">
+            <a href="mailto:stefan@stefanyas.me">
+                <img src="../img/email_icon.svg" alt="email icon" >
+            </a>
+            <a href="mailto:stefan@stefanyas.me">Email</a>
+        </li>
+
+        <li class="item">
+            <a href="https://matrix.to/#/@stefan_yas:matrix.org">
+                <img src="../img/element-messenger.svg" alt="element_icon" >
+            </a>
+            <a href="https://matrix.to/#/@stefan_yas:matrix.org">Element</a>
+        </li>
+
+        <li class="item">
+            <a href="https://threema.id/5AU7KBY5">
+                <img src="../img/threema-messenger.svg" alt="threema_icon" >
+            </a>
+            <a href="https://threema.id/5AU7KBY5">Threema</a>
+        </li>
+
+        <li class="item">
+            <a href="">
+                <img src="../img/session_icon.svg" alt="session-messenger-icon">
+            </a>
+            <a href="">Session</a>
+
+        </li>
+
+    </ul>
+
+    </div>
+  </div>
+
+  <img class="sig" width="250px" src="../img/signature effect.png" alt="signature" />
+
+</footer>
+
+</body>
+
 </html>
