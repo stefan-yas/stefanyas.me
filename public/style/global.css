@@ -28,6 +28,10 @@ h1 span {
     animation: wave 1s infinite;
 }
 
+a {
+    color: var(--font-color);
+}
+
 a:visited {
     color: var(--font-color);
 }
